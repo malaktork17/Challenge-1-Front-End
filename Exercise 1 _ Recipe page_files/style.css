@@ -1,0 +1,168 @@
+:root{
+    --back-page:hsl(30, 54%, 90%);
+    --page:  hsl(0, 0%, 100%);
+    --shado:hsl(30, 18%, 87%);
+    --h2:hsl(14, 45%, 36%);
+    --h4:hsl(332, 51%, 32%);
+    --back-4:hsl(330, 100%, 98%);
+    --main-p:hsl(24, 5%, 18%);
+    --p: hsl(30, 10%, 34%);
+}
+*{
+    padding:0px;
+    margin: 0%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box ;
+}
+
+body {font-family: 'Outfit', sans-serif;}
+
+
+@media (min-width:768px) {
+    .container{
+        width:400px;
+    }
+   
+}
+@media (min-width:992px) {
+    .container{
+        width:400px;
+       
+    }
+    body{ margin: 40px 0px;}
+}
+
+body{
+    background-color: var(--back-page);
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+
+}
+.container{
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-color: var(--page);
+}
+/* img */
+
+.container .image {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.image img {
+    width: 98%;
+    border-radius: 4%;
+    padding: 3px;
+}
+.image .text{padding: 10px;}
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Young Serif', serif;
+    color: var(--h2);
+}
+
+.container .time {
+    background-color: var(--back-4);
+    width: 83%;
+    border-radius: 10px;
+    padding:5px 31px;
+    position: relative;
+}
+.container .time h4 {
+    color: var(--h4);
+    padding: 3px;
+    position: absolute;
+    left: 14px;
+    top: 5px;
+    font-size: 21px;
+}
+.container .time ul {
+    padding-top: 38px;
+}
+.container .time li {
+    font-size: small;
+    color: var(--p);
+    font-size: 12px;
+}
+::marker {
+    font-size: 13px;
+    color: var(--h2);
+    font-weight: bold;
+}
+ li span{
+    font-weight: bold;
+}
+/* عموما */
+li {
+    line-height: 2.1;
+    padding-left: 7px;
+}
+p , li{
+    font-size: 13px;
+    color:var(--p)
+}
+h3 {
+    color: var(--h2);
+    font-family: 'Young Serif', serif;
+    position: absolute;
+    left: 21px;
+    top: 25px;
+    font-weight: 400;
+}
+/* المقادير */
+.box {
+    width: 100%;
+    padding: 31px;
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.box ul.i {
+    padding: 33px 11px;
+}
+.box ul.s{
+    padding: 33px 11px;
+    list-style-type: decimal;
+}
+.box p{
+    padding: 30px 0px;
+}
+
+/* table */
+
+table {
+    width: 100%;
+    margin: 5px auto;
+    border-collapse: collapse;
+}
+    
+
+td {
+    padding: 10px; /* الخلية */
+    color: var(--p);
+    border-bottom: 1px solid #00000027;
+}
+tr {
+    height: 30px; /*  ارتفاع*/
+}
+tr + tr {
+    margin-top: 15px; /* مسافة بين الصفوف */
+}
+
+table td:nth-child(2){
+    color: var(--h2);
+    font-weight: bold;
+}
+.table{
+    padding-bottom:35px ;
+}
